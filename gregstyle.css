@@ -1,14 +1,63 @@
-.navbar {
-  position: fixed;
-  background-color: lightgrey;
-  height: 60px;
-	width: 100%;
+/*Re-done nav sercion*/
+* {
+  box-sizing: border-box;
 }
 
-/*.navbar dt {
-  font-size: 25px;
-}*/
+body {
+  margin: 0;
+  padding: 80px;
+}
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+
+  background-color: #EEEEEE;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.rl-logo {
+  display: inline-block;
+  border-radius: 100%;
+  font-weight: 800;
+}
+
+.nav-link {
+  font-size: 18px;
+  padding: 0 6px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.rl-logo {
+  display: inline-block;
+  border-radius: 100%;
+  font-weight: 800;
+}
+
+.rl-logo h1 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+.navbar {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+/* original nav bar list style
 .navbar ul {
   list-style-type: : none;
   display: inline-block;
@@ -19,11 +68,11 @@
 
 .navbar li {
   display: inline-block;
-}
+}*/
 
+/*search bar*/
 .search {
-  padding-top: 90px;
-  padding-left: 100px;
+  margin-bottom: 30px;
 
 }
 
@@ -41,7 +90,7 @@
 }
 
 .magnifyglass {
-  height: 34px;
+  height: 30px;
   border: 1px solid black;
   position: fixed;
 }
@@ -52,12 +101,33 @@
   padding-top: 50px;
 }
 
-.results a{
-  color: blue;
+/*result pages */
+.pages {
+  display: inline-block; /* Tricky, this could start wrapping!  */
+  font-size: 0;
+  margin-bottom: 30px;
+  border: 1px solid #DDDDDD;
+  border-radius: 3px;
 }
 
-.box {
-  font-size: 0;
+.pages-button {
+  font-size: 16px;
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 3px;
+}
+
+.pages-display {
+  font-size: 16px;
+  padding: 0 30px;
+  padding: 8px 25px;
+  border-left: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
+}
+
+/*result listings just typing it in*/
+/*.results a{
+  color: blue;
 }
 
 .outter {
@@ -72,4 +142,33 @@
   width: 50%;
   display: inline-block;;
   font-size:0;
+}*/
+/*result listings using list form instead of just typing it*/
+.listings {
+  padding: 0;
+}
+
+.listing {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.listing-date ,
+.listing-location {
+  color: #999;
+}
+
+.listing-title {
+  font-weight: bold;
+  font-size: 17px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.search-button {
+  vertical-align: bottom;
+}
+
+.star-icon, .magnifying-glass-icon {
+  height: 100%;
 }

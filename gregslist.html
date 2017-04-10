@@ -6,33 +6,55 @@
     <title>Greg's List</title>
   </head>
   <body>
+    <header>
+      <a class="rl-logo">
+        <h1>Greg's List</h1>
+      </a>
+      <nav class="navbar">
+        <a href="" class="nav-link">Post</a>
+        <a href="" class="nav-link">Account</a>
+      </nav>
+    </header>
 
-    <nav class="navbar">
-      Greg's List
-      <ul>
-        <li><a href="https://www.google.com/">Post</a></li>
-        <li><a href="https://www.google.com/">Account</a></li>
-      </ul>
-    </nav>
-
-    <main>
+    <section>
       <form class="search" action="" method="post">
         <label for="POST-search">Search Jobs</label>
         <input class="bar" id="POST-search" type="text" name="search" placeholder="Search software jobs">
-        <input class="magnifyglass" type="image" src="magnifying-glass.png" value="">
+        <input class="magnifyglass" type="image" src="magnifying-glass.png" alt="Search" role="button">
       </form>
+    </section>
 
-      <section>
-        <div class="box outter"></div>
-      </section>
+    <nav class="pages">
+      <a class="pages-button">&lt; prev</a>
+      <span class="pages-display">1 to 100 of 179</span>
+      <a class="pages-button">next &gt;</a>
+    </nav>
 
-      <section class="results">
-        <p>June 22 <a href="https://www.google.com/">Technical Project Manager</a> Midtown East</p>
-        <p>June 21 <a href="https://www.google.com/">Frontend Developer</a> SoHo</p>
-        <p>June 20 <a href="https://www.google.com/">Senior Python Developer/Cofounder</a> Flatiron</p>
-      </section>
+    <!-- Not Symantically done
+    <main class="results">
+      <p>June 22 <a href="https://www.google.com/">Technical Project Manager</a> Midtown East</p>
+      <p>June 21 <a href="https://www.google.com/">Frontend Developer</a> SoHo</p>
+      <p>June 20 <a href="https://www.google.com/">Senior Python Developer/Cofounder</a> Flatiron</p>
+    </main> -->
+
+    <main>
+      <ul class="listings">
+        <li class="listing">
+          <span class="listing-date">June 22</span>
+          <a href="#" class="listing-title">Technical Project Manager</a>
+          <span class="listing-location">Midtown East</span>
+        </li>
+        <li class="listing">
+          <span class="listing-date">June 21</span>
+          <a href="#" class="listing-title">Frontend Developer</a>
+          <span class="listing-location">SoHo</span>
+        </li>
+        <li class="listing">
+          <span class="listing-date">June 20</span>
+          <a href="#" class="listing-title">Senior Python Developer / Cofounder</a>
+          <span class="listing-location">Flatiron</span>
+        </li>
+      </ul>
     </main>
-
-
   </body>
 </html>
